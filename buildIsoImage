@@ -1,0 +1,15 @@
+#!/bin/bash
+
+# build hybrid (mac/windows) disc from directory
+
+genisoimage -V malDeOjo \
+	-iso-level 2 -J -l -N -f -hfs \
+	-m buildIsoImage -m .gitignore \
+	-hidden FirefoxPortable -hidden rifle.ico \
+	-hidden run.bat -hidden run.vbs -hidden ShelExec.exe \
+	-hide-hfs Iniciar.lnk -hide-hfs FirefoxPortable -hide-hfs autorun.inf \
+	-hide-hfs rifle.ico -hide-hfs run.bat -hide-hfs run.vbs \
+	-hide-hfs ShelExec.exe  \
+	-hide-joliet .r.command -hide-joliet Inicia -hidden pinky-1.0 \
+	-auto .r.command \
+	-o ../malDeOjoDvd.iso $1

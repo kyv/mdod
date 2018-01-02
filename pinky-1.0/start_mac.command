@@ -1,0 +1,1 @@
+ruby "$(dirname -- "$0")"/pinky.rb

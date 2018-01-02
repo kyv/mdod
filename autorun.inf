@@ -1,0 +1,9 @@
+[autorun]
+action=Inicia DVD
+open=.\ShelExec.exe .\run.vbs
+icon=rifle.ico
+label=COLMEX
+[Content]
+MusicFiles=false
+PictureFiles=false
+VideoFiles=false
